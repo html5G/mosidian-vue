@@ -47,8 +47,8 @@
                 type="primary"
                 class="IamgeButon"
                 @click="cz = true"
-              >充值</el-button>
-              <el-dialog title="充值系统"
+              >充值余额</el-button>
+              <el-dialog title="充值余额"
                          :visible.sync="cz"
                          width="50%"
                          :modal-append-to-body='false'>
@@ -60,8 +60,8 @@
                 type="danger"
                 class="IamgeButon"
                 @click="nk = true"
-              >购买年卡</el-button>
-              <el-dialog title="购买年卡"
+              >开通年费</el-button>
+              <el-dialog title="开通年费"
                          :visible.sync="nk"
                          width="50%"
                          :modal-append-to-body='false'>
@@ -284,5 +284,24 @@
 <style>
   .productList .el-dialog {
     width: 34% ;
+  }
+</style>
+<style lang="scss">
+  .el-button--danger.is-disabled, .el-button--primary, .el-button--danger, .el-button--success.is-plain {
+    color: #181818;
+    background-color: #FFFFFF;
+    border-color: #eeeeee;
+  }
+  .el-radio__label {
+    color: #181818;
+  }
+  .grid-cont-right {
+    color: #181818 !important;
+  }
+  .el-radio__input.is-disabled+span.el-radio__label {
+    color: #000000;
+  }
+  .el-input.is-disabled .el-input__inner {
+    color: #000000;
   }
 </style>

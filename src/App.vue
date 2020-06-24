@@ -9,7 +9,7 @@
   }
 </script>
 
-<style lang="scss">
+<style>
   .el-button--danger.is-disabled, .el-button--primary, .el-button--danger, .el-button--success.is-plain {
     color: #181818;
     background-color: #FFFFFF;

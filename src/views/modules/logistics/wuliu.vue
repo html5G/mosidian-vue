@@ -16,77 +16,77 @@
               </div>
             </el-card>
           </el-col>
-          <el-col :span="8">
-            <el-card shadow="hover" :body-style="{padding: '0px'}">
-              <div class="grid-content grid-con-1">
-                <i class="el-icon-lx-people grid-con-icon"></i>
-                <div class="grid-cont-right">
-                  <div class="grid-num">2.3W+</div>
-                  <div>收件量</div>
-                </div>
-              </div>
-            </el-card>
-          </el-col>
-          <el-col :span="8">
-            <el-card shadow="hover" :body-style="{padding: '0px'}">
-              <div class="grid-content grid-con-2">
-                <i class="el-icon-lx-notice grid-con-icon"></i>
-                <div class="grid-cont-right">
-                  <div class="grid-num">1.7W+</div>
-                  <div>运输中</div>
-                </div>
-              </div>
-            </el-card>
-          </el-col>
-          <el-col :span="8">
-            <el-card shadow="hover" :body-style="{padding: '0px'}">
-              <div class="grid-content grid-con-3">
-                <i class="el-icon-lx-goods grid-con-icon"></i>
-                <div class="grid-cont-right">
-                  <div class="grid-num">2.7W+</div>
-                  <div>已送达</div>
-                </div>
-              </div>
-            </el-card>
-          </el-col>
+<!--          <el-col :span="8">-->
+<!--            <el-card shadow="hover" :body-style="{padding: '0px'}">-->
+<!--              <div class="grid-content grid-con-1">-->
+<!--                <i class="el-icon-lx-people grid-con-icon"></i>-->
+<!--                <div class="grid-cont-right">-->
+<!--                  <div class="grid-num">2.3W+</div>-->
+<!--                  <div>收件量</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </el-card>-->
+<!--          </el-col>-->
+<!--          <el-col :span="8">-->
+<!--            <el-card shadow="hover" :body-style="{padding: '0px'}">-->
+<!--              <div class="grid-content grid-con-2">-->
+<!--                <i class="el-icon-lx-notice grid-con-icon"></i>-->
+<!--                <div class="grid-cont-right">-->
+<!--                  <div class="grid-num">1.7W+</div>-->
+<!--                  <div>运输中</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </el-card>-->
+<!--          </el-col>-->
+<!--          <el-col :span="8">-->
+<!--            <el-card shadow="hover" :body-style="{padding: '0px'}">-->
+<!--              <div class="grid-content grid-con-3">-->
+<!--                <i class="el-icon-lx-goods grid-con-icon"></i>-->
+<!--                <div class="grid-cont-right">-->
+<!--                  <div class="grid-num">2.7W+</div>-->
+<!--                  <div>已送达</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </el-card>-->
+<!--          </el-col>-->
         </el-row>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
-      <el-col :span="8">
-        <el-card shadow="hover" class="daily-sales">
-          <h1 class="daily-sales-title">每日销量</h1>
-          <div class="floating-index">
-            <span>浮动指数</span>
-          </div>
-          <h1 class="daily-sales-num">9999</h1>
-          <div class="daily-sale-ring">
-            <el-progress type="circle" :percentage="25"></el-progress>
-          </div>
-          <div class="daily-sale-box">
-            <ul class="daily-sale-yesterday">
-              <li class="daily-sale-li">
-                <p class="daily-sale-title">今日销量</p>
-                <span class="daily-sale-num">7948</span>
-              </li>
-              <li class="daily-sale-line"></li>
-              <li class="daily-sale-li">
-                <p class="daily-sale-title">昨日销量</p>
-                <span class="daily-sale-num">3858</span>
-              </li>
-            </ul>
-          </div>
-        </el-card>
-      </el-col>
-      <el-col :span="16">
-        <el-card shadow="hover" class="mb-20" style="height:261px;">
-          <schart ref="bar" class="schart" canvasId="bar" :options="options"></schart>
-        </el-card>
-        <el-card shadow="hover" class="mb-20" style="height:261px;">
-          <schart ref="line" class="schart" canvasId="line" :options="options2"></schart>
-        </el-card>
-      </el-col>
-    </el-row>
+<!--    <el-row :gutter="20">-->
+<!--      <el-col :span="8">-->
+<!--        <el-card shadow="hover" class="daily-sales">-->
+<!--          <h1 class="daily-sales-title">每日销量</h1>-->
+<!--          <div class="floating-index">-->
+<!--            <span>浮动指数</span>-->
+<!--          </div>-->
+<!--          <h1 class="daily-sales-num">9999</h1>-->
+<!--          <div class="daily-sale-ring">-->
+<!--            <el-progress type="circle" :percentage="25"></el-progress>-->
+<!--          </div>-->
+<!--          <div class="daily-sale-box">-->
+<!--            <ul class="daily-sale-yesterday">-->
+<!--              <li class="daily-sale-li">-->
+<!--                <p class="daily-sale-title">今日销量</p>-->
+<!--                <span class="daily-sale-num">7948</span>-->
+<!--              </li>-->
+<!--              <li class="daily-sale-line"></li>-->
+<!--              <li class="daily-sale-li">-->
+<!--                <p class="daily-sale-title">昨日销量</p>-->
+<!--                <span class="daily-sale-num">3858</span>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </el-card>-->
+<!--      </el-col>-->
+<!--      <el-col :span="16">-->
+<!--        <el-card shadow="hover" class="mb-20" style="height:261px;">-->
+<!--          <schart ref="bar" class="schart" canvasId="bar" :options="options"></schart>-->
+<!--        </el-card>-->
+<!--        <el-card shadow="hover" class="mb-20" style="height:261px;">-->
+<!--          <schart ref="line" class="schart" canvasId="line" :options="options2"></schart>-->
+<!--        </el-card>-->
+<!--      </el-col>-->
+<!--    </el-row>-->
     <el-dialog title="快递查询" :visible.sync="dialogFormVisibleIE">
       <div class="Wuliu-input">
         <div style="margin-top: 15px;">

@@ -59,7 +59,7 @@
       <el-row :gutter="20" style="margin: 40px 0 10px 0;">
         <el-col :span="24">
           <el-row class="member-info-model">
-            <el-col :span="8" :offset="4">
+            <el-col :span="8" :offset="4" style="width: auto;margin-left: inherit">
               <div class="member-information">
                 <template v-if="flag === 1 || flag === '1'">
                   <img class="avatar" src="static/img/1.png">{{userName}}
@@ -98,21 +98,21 @@
                 </template>
               </div>
             </el-col>
-            <el-col :span="8" :offset-right="4">
-              <div>
-                <div style="text-align:center;margin-bottom: 15px; position:relative;">
-                  <img class="member-info-card-img" :src="cardImg">
-                </div>
-                <div style="display:flex">
-                  <el-button class="switch-button" type="primary" @click="checkCardImg()" size="medium" plain>
-                    {{changeShow==true?'正':'反'}}
-                  </el-button>
-                  <el-button class="switch-button" type="primary" @click="checkCardImgTo()" size="medium" plain>
-                    {{changeShow==true?'?':'?'}}
-                  </el-button>
-                </div>
-              </div>
-            </el-col>
+<!--            <el-col :span="8" :offset-right="4">-->
+<!--              <div>-->
+<!--                <div style="text-align:center;margin-bottom: 15px; position:relative;">-->
+<!--                  <img class="member-info-card-img" :src="cardImg">-->
+<!--                </div>-->
+<!--                <div style="display:flex">-->
+<!--                  <el-button class="switch-button" type="primary" @click="checkCardImg()" size="medium" plain>-->
+<!--                    {{changeShow==true?'正':'反'}}-->
+<!--                  </el-button>-->
+<!--                  <el-button class="switch-button" type="primary" @click="checkCardImgTo()" size="medium" plain>-->
+<!--                    {{changeShow==true?'?':'?'}}-->
+<!--                  </el-button>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </el-col>-->
           </el-row>
         </el-col>
         <el-col :span="24">
@@ -658,22 +658,25 @@
   .switch-button {
     display: flex;
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   /*  修改的会员信息样式*/
   .member-info-model {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
+    justify-content: center;
   }
 
   .member-information {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     flex-direction: column;
-    margin-left: -100px;
+    /*margin-left: -100px;*/
+    margin-bottom: 20px;
   }
 
   .member-information .avatar {

@@ -2,11 +2,7 @@
   <div>
     <div class="member-info-carousel">
       <el-carousel :interval="2000" :autoplay="true" :loop="true" indicator-position="none" arrow="hover" type="card">
-<!--        <el-carousel-item v-for="(item,index) in msg2" :key="index">-->
-<!--          <img v-bind:src="item.src" @mouseleave="leave(index)" @mouseenter="couten(index)"-->
-<!--               class="member-info-carousel-img"/>-->
-<!--        </el-carousel-item>-->
-        <div v-if="flagY === 2 | flagY === '2'">
+        <div v-if="flagY === 2 | flagY === '2'">
                   <el-carousel-item v-for="(item,index) in A" :key="index">
                     <img v-bind:src="item.src" @mouseleave="leave(index)" @mouseenter="couten(index)"
                                         class="member-info-carousel-img"/>
@@ -20,9 +16,9 @@
                 </el-carousel-item>
                 </div>
                 <!-- 获取到C端 -->
-                <div v-else-if="flagY === 4 | flagY === '4'">
-                <el-carousel-item v-for="(item,index) in C" :key="index">
-                  <img v-bind:src="item.src" @mouseleave="leave(index)" @mouseenter="couten(index)"
+                <div v-else-if="flagY === 4 | flagY === '4'">
+                <el-carousel-item v-for="(item,index) in C" :key="index">
+                  <img v-bind:src="item.src" @mouseleave="leave(index)" @mouseenter="couten(index)"
                        class="member-info-carousel-img"/>
                 </el-carousel-item>
                 </div>
@@ -51,21 +47,21 @@
                 <img class="avatar" :src="form.avatar">
               </div>
             </el-col>
-            <el-col :span="8" :offset-right="4">
-              <div>
-                <div style="text-align:center;margin-bottom: 15px; position:relative;">
-                  <img class="member-info-card-img" :src="cardImg">
-                </div>
-                <div style="display:flex">
-                  <el-button class="switch-button" type="primary" @click="checkCardImg()" size="medium" plain>
-                    {{changeShow==true?'正':'反'}}
-                  </el-button>
-                  <el-button class="switch-button" type="primary" @click="checkCardImgTo()" size="medium" plain>
-                    {{changeShow==true?'?':'?'}}
-                  </el-button>
-                </div>
-              </div>
-            </el-col>
+<!--            <el-col :span="8" :offset-right="4">-->
+<!--              <div>-->
+<!--                <div style="text-align:center;margin-bottom: 15px; position:relative;">-->
+<!--                  <img class="member-info-card-img" :src="cardImg">-->
+<!--                </div>-->
+<!--                <div style="display:flex">-->
+<!--                  <el-button class="switch-button" type="primary" @click="checkCardImg()" size="medium" plain>-->
+<!--                    {{changeShow==true?'正':'反'}}-->
+<!--                  </el-button>-->
+<!--                  <el-button class="switch-button" type="primary" @click="checkCardImgTo()" size="medium" plain>-->
+<!--                    {{changeShow==true?'?':'?'}}-->
+<!--                  </el-button>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </el-col>-->
           </el-row>
         </el-col>
       </el-row>
@@ -531,16 +527,18 @@
   .member-info-model {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
+    justify-content: center;
   }
 
   .member-information {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     flex-direction: column;
-    margin-left: -100px;
+    /*margin-left: -100px;*/
+    margin-bottom: 20px;
   }
 
   .member-information .avatar {
